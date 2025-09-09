@@ -1,0 +1,241 @@
+body {
+  user-select: none;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  /*background-image: url(../sprites/background.jpeg);*/
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.game-header, .game-footer {
+  width: 100vw;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.header {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+}
+
+.game-header {
+  border-radius: 0 0 16px 16px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: inset 
+  0px 0px 30px rgba(255, 255, 255, 0.3),
+  0px 0px 25px rgba(0, 0, 0, 1);
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+  max-height: 8.5%;
+}
+
+.login-container {
+  color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.form-control {
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.user-name {
+  position: absolute;
+  right: 0;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.game-header {
+  min-height: 45px;
+}
+
+.game-footer {
+  min-height: 60px;
+}
+
+.envanter {
+  border-radius: 16px;
+  background-color: #474747;
+}
+
+.envanter-cell {
+  border-radius: 16px;
+  background-color: #929292;
+}
+
+.money-display {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.moving-mode-active {
+}
+
+.game-grid {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cell {
+  background-color: #7777771a;
+  border: 1px solid #99999900;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.moving-cell {
+  cursor: grab;
+}
+
+.moving-target-cell {
+  cursor: grab;
+}
+
+.hover-furnace:hover {
+  background-color: #a0522d;
+}
+
+.hover-table:hover {
+  background-color: #a0522d;
+}
+
+.hover-chair:hover {
+  background-color: #a0522d;
+}
+
+.dirty {
+  background-color: #e6e6e6;
+}
+
+.occupied-ready {
+  background-color: #008000;
+}
+
+.occupied {
+  background-color: #b0c4de;
+}
+
+.selected {
+  border: 3px solid #ffcc00;
+}
+
+/* Base button styles */
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: #555 !important;
+  color: #aaa !important;
+  box-shadow: none;
+}
+
+/* Button color styles */
+.btn-green {
+  background-color: #4CAF50;
+}
+
+.btn-green:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.btn-yellow {
+  background-color: #FFC107;
+}
+
+.btn-yellow:hover:not(:disabled) {
+  background-color: #e0ac00;
+}
+
+.btn-red {
+  background-color: #F44336;
+}
+
+.btn-red:hover:not(:disabled) {
+  background-color: #d32f2f;
+}
+
+.btn-dark-red {
+  background-color: #D32F2F;
+}
+
+.btn-dark-red:hover:not(:disabled) {
+  background-color: #b71c1c;
+}
+
+.btn-blue {
+  background-color: #2196F3;
+}
+
+.btn-blue:hover:not(:disabled) {
+  background-color: #1976d2;
+}
+
+.btn-purple {
+  background-color: #9C27B0;
+}
+
+.btn-purple:hover:not(:disabled) {
+  background-color: #7b1fa2;
+}
+
+.btn-default {
+  background-color: #666;
+}
+
+.sell-btn {
+  margin: 5% 20px;
+}
+
+.cancel-btn {
+  margin: 5% 170px;
+}
